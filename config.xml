@@ -12,7 +12,6 @@
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="true" />
 	
-	<feature name="Geolocation">
-		<param name="android-package" value="org.apache.cordova.GeoBroker" />
-	</feature>
+	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+
 </widget>
