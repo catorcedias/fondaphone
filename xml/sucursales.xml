@@ -1,0 +1,23 @@
+<sucursales>
+<sucursal>
+<id>1</id>
+<nombre>Del Valle</nombre>
+<direccion>Capultepec 340</direccion>
+<latitud>19.379918</latitud>
+<longitud>-99.177532</longitud>
+</sucursal>
+<sucursal>
+<id>2</id>
+<nombre>Condesa</nombre>
+<direccion>Nuevo Leon 120</direccion>
+<latitud>19.405877</latitud>
+<longitud>-99.170151</longitud>
+</sucursal>
+<sucursal>
+<id>3</id>
+<nombre>Cuauhteémoc</nombre>
+<direccion>Direccion 120</direccion>
+<latitud>19.43696</latitud>
+<longitud>-99.148178</longitud>
+</sucursal>
+</sucursales>
