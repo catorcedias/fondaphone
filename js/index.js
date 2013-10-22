@@ -2,7 +2,7 @@ function onDeviceReady() {
 	$('.listening').hide();
 	$('.received').show();
 	navigator.geolocation.getCurrentPosition(onSuccess, onError);
-	var idNav= navigator.geolocation.watchPosition(onSuccess, onError,{"timeout": 1000});
+	//var idNav= navigator.geolocation.watchPosition(onSuccess, onError,{"timeout": 1000});
 }
 
 
