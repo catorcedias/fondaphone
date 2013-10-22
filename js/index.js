@@ -81,7 +81,7 @@
 	function loadData( sucursales ){
 		var sucursal = getClosest( sucursales, currentLat, currentLon);
 		var distance = calculateDistance({"lat": sucursal.latitud, "lon": sucursal.longitud}, {"lat": currentLat, "lon": currentLon});
-		$("#stage2").html( "La sucursal mas cercana es la de: "+ sucursal.name + " a una distancia de "+ distance  );
+		$("#stage2").html( "<h3>La sucursal mas cercana es</h3><p>"+ sucursal.name + "</p><h3>Dirección:</h3><p>"+ sucursal.direction +"</p>"+ "</p><h3>Distancia:</h3><p>"+ parseInt(distance) +" Metros</p>");
 	}
 	
 	//Search the closest store to the lat and long coordinates
@@ -91,7 +91,6 @@
 		var sucursalAux;
 		for (var i=0; i<sucursales.length; i++){
 			distanceAux = calculateDistance({"lat": sucursales[i].latitud, "lon": sucursales[i].longitud}, {"lat": lat, "lon": long});
-			alert( distanceAux);
 			if ( distanceAux < minDistance){
 				sucursalAux = sucursales[i];
 				minDistance= distanceAux;
