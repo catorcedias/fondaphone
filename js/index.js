@@ -81,7 +81,9 @@
 	function loadData( sucursales ){
 		var sucursal = getClosest( sucursales, currentLat, currentLon);
 		var distance = calculateDistance({"lat": sucursal.latitud, "lon": sucursal.longitud}, {"lat": currentLat, "lon": currentLon});
-		$("#stage2").html( "<h3>La sucursal mas cercana es</h3><p>"+ sucursal.name + "</p><h3>Dirección:</h3><p>"+ sucursal.direction +"</p>"+ "</p><h3>Distancia:</h3><p>"+ parseInt(distance) +" Metros</p>");
+		$("#stage2").html( '<h3>La sucursal mas cercana es</h3><p>'+ sucursal.name + '</p><h3>Dirección:</h3><p>'+ sucursal.direction +'</p>'+ '</p><h3>Distancia:</h3><p>'+ parseInt(distance) +' Metros</p>'+'<h3>Mapa:</h3><iframe width="250" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.es/?ie=UTF8&amp;ll=19.435757,-99.149895&amp;spn=0.01722,0.033023&amp;t=m&amp;z=16&amp;output=embed"></iframe><br /><small><a href="https://maps.google.es/?ie=UTF8&amp;ll=19.435757,-99.149895&amp;spn=0.01722,0.033023&amp;t=m&amp;z=16&amp;source=embed" style="color:#0000FF;text-align:left">Ver mapa más grande</a></small>');
+		 
+		 
 	}
 	
 	//Search the closest store to the lat and long coordinates
