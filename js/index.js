@@ -1,19 +1,19 @@
 	var currentLat=0;
 	var currentLong=0;
+	var currentBranch;
 	
 	function onDeviceReady() {
 		$('.listening').hide();
 		$('.received').show();
 		navigator.geolocation.getCurrentPosition(onSuccess, onError);
+		
+		
 		//var idNav= navigator.geolocation.watchPosition(onSuccess, onError,{"timeout": 1000});
 	}
 
 	function onSuccess(position) {
 		currentLat= position.coords.latitude;
 		currentLon= position.coords.longitude;
-		$("#stage1").hide();
-		$("#stage2").show();
-		
 		getBranches( loadData );
 	};
 	
@@ -77,23 +77,29 @@
 	}
 	
 	function loadData( branches ){
-		//Showing branches
-		var htmlAux ="<ul class='branchesList'>";
-		for( var i=0; i< branches.length; i++) {
-			htmlAux += "<li data-id='"+ i+"'>"+ branches[i].name +" - "+ Math.ceil(branches[i].order)+"Mts <a href='#' onClick='seleccionar("+branches[i].id+")'>Seleccionar</a></li>";
-		}
-		htmlAux +="</ul>";
-		$("#stage2 .branches").html( htmlAux );
+		document.location="#page1";
 		
-		$("#stage2 .branchesList li").click( function(){
+		//Showing branches
+		var htmlAux ='<li data-role="list-divider" role="heading">Sucursales</li>';
+		for( var i=0; i< branches.length; i++) {
+			 htmlAux +='<li data-theme="c"><a class="view" href="#" data-id="'+ i+'">'+ branches[i].name +' - '+ Math.ceil(branches[i].order)+'Mts</a><a class="select" data-id="'+ i+'">Select</a></li>';
+		}
+		$("#page1 .branches").html( htmlAux );
+		$("#page1 .branches li a.view").click( function(){
 			viewData( branches[ $(this).attr("data-id")]);
 		});
-		
+		$("#page1 .branches li a.select").click( function(){
+			currentBranch = branches[ $(this).attr("data-id")];
+			document.location="#page2";
+			$("#page2 .currentbranch").html( currentBranch.name );
+			
+		});
 		viewData(branches[0]);
 	}
 	
 	function viewData( branch ){
-		$("#stage2 .name").html( branch.name );
-		$("#stage2 .direction").html( branch.direction );
-		$("#stage2 .map").html('<iframe width="250" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.es/?ie=UTF8&amp;ll='+ branch.latitud+','+ branch.longitud+'&amp;spn=0.01722,0.033023&amp;t=m&amp;z=16&amp;output=embed"></iframe>');
+		$(".name").html( branch.name );
+		$(".direction").html( branch.direction );
+		$(".map").html('<iframe width="250" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.es/?ie=UTF8&amp;ll='+ branch.latitud+','+ branch.longitud+'&amp;spn=0.01722,0.033023&amp;t=m&amp;z=16&amp;output=embed"></iframe>');
 	}
+	
