@@ -1,0 +1,48 @@
+<menu>
+	<categoria>
+		<nombre>Entremeses</nombre>
+		<items>
+			<item >
+				<id>1</id>
+				<tipo>plato</tipo>
+				<nombre>Queso Fundido</nombre>
+				<imagen></imagen>
+				<descripcion>Delicioso queso gouda servido con tortillas de harina.</descripcion>
+				<precio>96</precio>
+				<moneda>Mx</moneda>
+			</item>
+			<item>
+				<id>2</id>
+				<tipo>plato</tipo>
+				<nombre>Queso Fundido con Chistorra</nombre>
+				<imagen></imagen>
+				<descripcion>Delicioso queso gouda servido con chistorra frita, servido tortillas de harina.</descripcion>
+				<precio>117</precio>
+				<moneda>Mx</moneda>
+			</item>
+			<item>
+				<id>3</id>
+				<tipo>plato</tipo>
+				<nombre>Queso Provoleta</nombre>
+				<imagen></imagen>
+				<descripcion>Rodaja de jitomate y queso provoleta.</descripcion>
+				<precio>117</precio>
+				<moneda>Mx</moneda>
+			</item>
+		</items>
+	</categoria>
+	<categoria>
+		<nombre>Bebidas</nombre>
+		<items>
+			<item>
+				<id>4</id>
+				<tipo>bebida</tipo>
+				<nombre>Refresco</nombre>
+				<imagen></imagen>
+				<descripcion>350ml</descripcion>
+				<precio>26</precio>
+				<moneda>Mx</moneda>
+			</item>
+		</items>
+	</categoria>
+</menu>

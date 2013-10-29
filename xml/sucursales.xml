@@ -1,23 +1,34 @@
 <sucursales>
-<sucursal>
-<id>1</id>
-<nombre>Del Valle</nombre>
-<direccion>Insurjentes 340</direccion>
-<latitud>19.379918</latitud>
-<longitud>-99.177532</longitud>
-</sucursal>
-<sucursal>
-<id>2</id>
-<nombre>Condesa</nombre>
-<direccion>Nuevo Leon 120</direccion>
-<latitud>19.405877</latitud>
-<longitud>-99.170151</longitud>
-</sucursal>
-<sucursal>
-<id>3</id>
-<nombre>Cuauhtémoc</nombre>
-<direccion>Cuauhtémoc 120</direccion>
-<latitud>19.43696</latitud>
-<longitud>-99.148178</longitud>
-</sucursal>
+	<sucursal>
+		<id>1</id>
+		<nombre>Isabel la Católica</nombre>
+		<direccion>Isabel la Católica #1198 Col. Independencia</direccion>
+		<telefono>111111111</telefono>
+		<latitud>24.145408</latitud>
+		<longitud>-110.310355</longitud>
+	</sucursal>
+	<sucursal>
+		<id>2</id>
+		<nombre>San Jerónimo</nombre>
+		<direccion>Centro Comercial San Jerónimo. Av. San Jerónimo #630 L-1 Col. La Otra Banda</direccion>
+		<telefono>111111111</telefono>
+		<latitud>24.145408</latitud>
+		<longitud>-110.310355</longitud>
+	</sucursal>
+	<sucursal>
+		<id>3</id>
+		<nombre>Viaducto</nombre>
+		<direccion>Viaducto M. Aleman #80 Col. Atenor Salas</direccion>
+		<telefono>111111111</telefono>
+		<latitud>24.145408</latitud>
+		<longitud>-110.310355</longitud>
+	</sucursal>
+	<sucursal>
+		<id>4</id>
+		<nombre>Altavista </nombre>
+		<direccion>Plaza Puerta Altavista. Camino al Desierto de los Leones #24 Col. San Angel, Del. Alvaro Obregón</direccion>
+		<telefono>111111111</telefono>
+		<latitud>24.145408</latitud>
+		<longitud>-110.310355</longitud>
+	</sucursal>
 </sucursales>
