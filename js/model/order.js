@@ -29,12 +29,23 @@ function Order( ){
 		}
 	}
 	
-	this.removeItem = function( index ){
-			var newItems = new Array();
-			for (var i=0; i < this.orderItems.length; i++){
-				if( i != index ) this.newItems[this.newItems.length] = this.orderItems[i];
-			}
-			this.items = newItems;
+	this.removeItem = function( itemId ){
+		var newItems = new Array();
+		for (var i=0; i < this.orderItems.length; i++){
+			if( itemId != this.orderItems[i].item.id ) this.newItems[this.newItems.length] = this.orderItems[i];
+		}
+		this.orderItems = newItems;
+	}
+	
+	this.updateQuantityItem = function( itemId, quantity ){
+		this.getItem(itemId).setQuantity(quantity);
+	}	
+	
+	this.getItem = function( itemId ){
+		for (var i=0; i < this.orderItems.length; i++){
+			if( itemId == this.orderItems[i].item.id ) return this.orderItems[i];
+		}
+		return null;
 	}	
 	
 	this.total = function( ){

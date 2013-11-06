@@ -19,7 +19,6 @@ function toRadian(deg) {
 };
 
 function setMapMarker( mapContainerId, title,lat, long) {
-	alert("hi");
 	var myLatlng = new google.maps.LatLng(lat,long);
 	var mapOptions = {
 	zoom: 4,
@@ -33,4 +32,8 @@ function setMapMarker( mapContainerId, title,lat, long) {
 	  map: map,
 	  title: 'Hello World!'
 	});
+}
+
+function log(text){
+	console.log(text);
 }

@@ -1,0 +1,46 @@
+{
+    "categorias": [
+      {
+        "nombre": "Entremeses",
+        "items": [
+            {
+              "id": "1",
+              "tipo": "plato",
+              "nombre": "Queso Fundido",
+              "descripcion": "Delicioso queso gouda servido con tortillas de harina.",
+              "precio": "96",
+              "moneda": "Mx"
+            },
+            {
+              "id": "2",
+              "tipo": "plato",
+              "nombre": "Queso Fundido con Chistorra",
+              "descripcion": "Delicioso queso gouda servido con chistorra frita, servido tortillas de harina.",
+              "precio": "117",
+              "moneda": "Mx"
+            },
+            {
+              "id": "3",
+              "tipo": "plato",
+              "nombre": "Queso Provoleta",
+              "descripcion": "Rodaja de jitomate y queso provoleta.",
+              "precio": "117",
+              "moneda": "Mx"
+            }
+          ]
+      },
+      {
+        "nombre": "Bebidas",
+        "items": [ 
+	    	{
+	            "id": "4",
+	            "tipo": "bebida",
+	            "nombre": "Refresco",
+	            "descripcion": "350ml",
+	            "precio": "26",
+	            "moneda": "Mx"
+	    	}
+	  	]
+      }
+    ]
+}

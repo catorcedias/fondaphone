@@ -1,0 +1,36 @@
+{
+  "sucursales": [
+      {
+        "id": "1",
+        "nombre": "Isabel la Católica",
+        "direccion": "Isabel la Católica #1198 Col. Independencia",
+        "telefono": "111111111",
+        "latitud": "24.145408",
+        "longitud": "-110.310355"
+      },
+      {
+        "id": "2",
+        "nombre": "San Jerónimo",
+        "direccion": "Centro Comercial San Jerónimo. Av. San Jerónimo #630 L-1 Col. La Otra Banda",
+        "telefono": "111111111",
+        "latitud": "24.145408",
+        "longitud": "-110.310355"
+      },
+      {
+        "id": "3",
+        "nombre": "Viaducto",
+        "direccion": "Viaducto M. Aleman #80 Col. Atenor Salas",
+        "telefono": "111111111",
+        "latitud": "24.145408",
+        "longitud": "-110.310355"
+      },
+      {
+        "id": "4",
+        "nombre": "Altavista ",
+        "direccion": "Plaza Puerta Altavista. Camino al Desierto de los Leones #24 Col. San Angel, Del. Alvaro Obregón",
+        "telefono": "111111111",
+        "latitud": "24.145408",
+        "longitud": "-110.310355"
+      }
+    ]
+}

@@ -125,3 +125,21 @@ element.style {
 	-webkit-border-top-left-radius: 0;
 	border-top-left-radius: 0;
 }
+
+.addtofavs{
+	display: inline-block;
+	background: url("../img/favBtn.png") no-repeat;
+	width: 20px;
+	height: 20px;
+}
+
+.addtofavs.active{
+	background: url("../img/favActiveBtn.png") no-repeat;
+}
+
+.addtoorder{
+	display: inline-block;
+	background: url("../img/addToOrderBtn.png") no-repeat;
+	width: 20px;
+	height: 20px;
+}
